@@ -1,0 +1,86 @@
+:root {
+    --dark-primary: #2A254B;
+    --primary: #4E4D93;
+    --light-grey: #F9F9F9;
+    --border-grey: #EBE8F4;
+    --white: #FFFFFF;
+    --border-dark: #CAC6DA;
+
+}
+
+html, textarea, button, input {
+    font-family: 'Satoshi', sans-serif;
+    font-weight: 300;
+    color: var(--dark-primary);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.bl,
+.bm,
+.bs {
+    line-height: 150%;
+}
+
+.bl {
+    font-size: 18pt;
+}
+
+.bm {
+    font-size: 16pt;
+}
+
+.bs {
+    font-size: 14pt;
+}
+
+h1 {
+    font-size: 36pt;
+}
+
+h2 {
+    font-size: 32pt;
+}
+
+button {
+    cursor: pointer;
+}
+
+.product_card.portrait {
+    img {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.text_input {
+    * {
+        padding: 1rem 2rem;
+        border: none;
+    }
+    button {
+        background-color: var(--dark-primary);
+        color: var(--white);
+    }
+    input {
+        outline: none;
+    }
+}
+
+.featured_card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 3rem;
+    width: 305px;
+    img {
+        width: 1.5rem;
+    }
+}
