@@ -84,3 +84,31 @@ button {
         width: 1.5rem;
     }
 }
+
+nav {
+    position: fixed;
+    inset: 0 0 auto 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 28px;
+    
+    padding-block: 20px;
+
+    background-color: var(--white);
+    h1 {
+        user-select: none;
+    }
+    div > * {
+        margin-inline: 0.5rem;
+    }
+}
+
+body {
+    padding-top: 50px;
+}
+
+section {
+    padding-inline: 80px;
+}
