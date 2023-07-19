@@ -87,6 +87,11 @@ button {
     color: var(--white)
 }
 
+.flex_list {
+    display: flex;
+    justify-content: space-between;
+}
+
 .featured_card {
     display: flex;
     flex-direction: column;
@@ -132,7 +137,7 @@ a {
 #welcome_section {
     padding-top: 70px;
     padding-inline: 80px;
-    height: 100vh;
+    height: max(50rem, 100vh);
 }
 
 .hero_top {
@@ -148,10 +153,9 @@ a {
     display: flex;
     background-color: var(--dark-primary);
     color: var(--white);
-    max-height: 80vh;
     img {
         object-fit: cover;
-        flex: 1 1 70vw;
+        height: max(40rem, 80vh);
     }
     .left {
         display: flex;
@@ -167,7 +171,16 @@ a {
 }
 
 #difference_section {
-    .featured_list {
-        display: flex;
+    padding-block: 60px;
+    h3 {
+        text-align: center;
     }
+}
+
+#product_section {
+    padding-block: 80px;
+    .flex_list {
+        padding-block: 33px;
+    }
+    
 }

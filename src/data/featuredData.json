@@ -21,5 +21,32 @@
             "header": "Next day as standard",
             "body": "Order before 3pm and get your order the next day as standard"
         }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "image": "../../public/chair-thumb.png",
+            "name": "The Dandy chair",
+            "price": "250",
+            "type": "vertical"
+        },{
+            "id": 2,
+            "image": "../../public/brown-thumb.png",
+            "name": "Rustic Vase Set",
+            "price": "155",
+            "type": "vertical"
+        },{
+            "id": 3,
+            "image": "../../public/white-thumb.png",
+            "name": "The Silky Vase",
+            "price": "125",
+            "type": "vertical"
+        },{
+            "id": 4,
+            "image": "../../public/lamp-thumb.png",
+            "name": "The Lucy Lamp",
+            "price": "399",
+            "type": "vertical"
+        }
     ]
 }
