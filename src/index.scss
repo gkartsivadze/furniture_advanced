@@ -5,6 +5,7 @@
     --border-grey: #EBE8F4;
     --white: #FFFFFF;
     --border-dark: #CAC6DA;
+    --transparent-white: hsla(0, 0%, 100%, 0.15);
 
 }
 
@@ -28,6 +29,7 @@ h6,
 .bm,
 .bs {
     line-height: 150%;
+    font-weight: 300;
 }
 
 .bl {
@@ -74,6 +76,17 @@ button {
     }
 }
 
+.btn {
+    @extend .bm;
+    border: none;
+    padding: 1rem 2rem;
+}
+
+.btn_trans {
+    background-color: var(--transparent-white);
+    color: var(--white)
+}
+
 .featured_card {
     display: flex;
     flex-direction: column;
@@ -97,6 +110,8 @@ nav {
     padding-block: 20px;
 
     background-color: var(--white);
+
+    border-bottom: 1px solid var(--border-dark);
     h1 {
         user-select: none;
     }
@@ -105,10 +120,54 @@ nav {
     }
 }
 
-body {
-    padding-top: 50px;
-}
-
 section {
     padding-inline: 80px;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
+#welcome_section {
+    padding-top: 70px;
+    padding-inline: 80px;
+    height: 100vh;
+}
+
+.hero_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 20px;
+
+    list-style: none;
+    gap: 44px;
+}
+#hero {
+    display: flex;
+    background-color: var(--dark-primary);
+    color: var(--white);
+    max-height: 80vh;
+    img {
+        object-fit: cover;
+        flex: 1 1 70vw;
+    }
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 41px;
+
+        padding: 60px;
+        p {
+            margin-top: auto;
+        }
+    }
+}
+
+#difference_section {
+    .featured_list {
+        display: flex;
+    }
 }

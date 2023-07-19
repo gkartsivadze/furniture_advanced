@@ -1,0 +1,25 @@
+{
+    "featured": [
+        {
+            "id": 1,
+            "icon": "../../public/icons/Delivery.svg",
+            "header": "Next day as standard",
+            "body": "Order before 3pm and get your order the next day as standard"
+        },{
+            "id": 2,
+            "icon": "../../public/icons/Checkmark--outline.svg",
+            "header": "Next day as standard",
+            "body": "Order before 3pm and get your order the next day as standard"
+        },{
+            "id": 3,
+            "icon": "../../public/icons/Purchase.svg",
+            "header": "Next day as standard",
+            "body": "Order before 3pm and get your order the next day as standard"
+        },{
+            "id": 4,
+            "icon": "../../public/icons/Sprout.svg",
+            "header": "Next day as standard",
+            "body": "Order before 3pm and get your order the next day as standard"
+        }
+    ]
+}
