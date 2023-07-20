@@ -1,6 +1,7 @@
 import chairImg from '../../public/chair-thumb.png'
 
 export default function Hero() {
+
     return (
         <div id="hero">
             <div className='left'>

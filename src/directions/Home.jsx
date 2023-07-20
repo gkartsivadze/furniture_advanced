@@ -1,6 +1,5 @@
 import FeaturedCard from "../components/FeaturedCard"
 import Hero from "../components/Hero"
-import HeroTop from "../components/HeroTop"
 import TextInput from "../components/TextInput"
 import ProductListSection from "../components/ProductListSection"
 
@@ -8,12 +7,13 @@ import { featured, products, popularProducts } from "../data/featuredData.json"
 
 import backImage from "../../public/back.png"
 
+import '../home.scss'
+
 function Home() {
 
   return (
     <main>
       <section id="welcome_section">
-        <HeroTop />
         <Hero />
       </section>
       <section id="difference_section">
