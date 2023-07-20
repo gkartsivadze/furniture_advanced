@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import chairImg from '../../public/chair-thumb.png'
 
 export default function Hero() {
-
+    const [width] = useResize();
     return (
         <div id="hero">
             <div className='left'>
@@ -13,7 +14,14 @@ export default function Hero() {
                     using modern web technologies.
                 </p>
             </div>
-            <img src={chairImg} alt="Chair image" />
+            {width > 1100 && <img src={chairImg} alt="Chair image" />}
         </div>
     )
+}
+
+function useResize() {
+    const [width,setWidth] = useState();
+    window.addEventListener("resize", () => setWidth(window.innerWidth))
+
+    return [width];
 }

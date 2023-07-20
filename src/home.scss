@@ -1,17 +1,16 @@
 #welcome_section {
-    padding-top: 150px;
-    padding-inline: 80px;
-    height: max(50rem, calc(100vh - 150px));
+    padding-top: 9.375rem;
+    height: max(40rem, calc(100vh - 9.375rem));
 }
 
 .hero_top {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-block: 20px;
+    padding-block: 1.125rem;
 
     list-style: none;
-    gap: 44px;
+    gap: 2.75rem;
 }
 #hero {
     display: flex;
@@ -25,9 +24,9 @@
         display: flex;
         flex-direction: column;
         align-items: start;
-        gap: 41px;
+        gap: 2.5rem;
 
-        padding: 60px;
+        padding: 3.75rem;
         p {
             margin-top: auto;
         }
@@ -35,14 +34,14 @@
 }
 
 #difference_section {
-    padding-block: 60px;
+    padding-block: 3.75rem;
     h3 {
         text-align: center;
     }
 }
 
 #product_section {
-    padding-block: 80px;
+    padding-block: 5rem;
     .flex_list {
         padding-block: 33px;
     }
@@ -86,9 +85,15 @@
 
 @media (max-width: 1250px) {
     #hero img {
-        display: none;
+        height: 30rem;
+    }
+    #welcome_section {
+        height: auto;
     }
     nav {
+        div > * {
+            margin-inline: 0;
+        }
         .hero_top {
             display: grid;
             grid-auto-flow: column;
@@ -99,10 +104,11 @@
             padding-inline: 2rem;
         }
     }
-}
 
-@media (max-width: 700px) {
-    #search-btn {
-        order: 2;
+    #difference_section {
+        .flex_list {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 }

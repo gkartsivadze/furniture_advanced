@@ -9,8 +9,7 @@ import backImage from "../../public/back.png"
 
 import '../home.scss'
 
-function Home() {
-
+export default function Home() {
   return (
     <main>
       <section id="welcome_section">
@@ -48,4 +47,9 @@ function Home() {
   )
 }
 
-export default Home
+function useResize() {
+  const [width,setWidth] = useState();
+  window.addEventListener("resize", () => setWidth(window.innerWidth))
+
+  return [width];
+}
