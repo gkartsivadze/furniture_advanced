@@ -2,25 +2,25 @@
     "featured": [
         {
             "id": 1,
-            "icon": "../../public/icons/Delivery.svg",
+            "icon": "../icons/Delivery.svg",
             "header": "Next day as standard",
             "body": "Order before 3pm and get your order the next day as standard"
         },
         {
             "id": 2,
-            "icon": "../../public/icons/Checkmark--outline.svg",
+            "icon": "../icons/Checkmark--outline.svg",
             "header": "Next day as standard",
             "body": "Order before 3pm and get your order the next day as standard"
         },
         {
             "id": 3,
-            "icon": "../../public/icons/Purchase.svg",
+            "icon": "../icons/Purchase.svg",
             "header": "Next day as standard",
             "body": "Order before 3pm and get your order the next day as standard"
         },
         {
             "id": 4,
-            "icon": "../../public/icons/Sprout.svg",
+            "icon": "../icons/Sprout.svg",
             "header": "Next day as standard",
             "body": "Order before 3pm and get your order the next day as standard"
         }
@@ -28,28 +28,28 @@
     "products": [
         {
             "id": 1,
-            "image": "../../public/chair-thumb.png",
+            "image": "..//chair-thumb.png",
             "name": "The Dandy chair",
             "price": "250",
             "type": "vertical"
         },
         {
             "id": 2,
-            "image": "../../public/brown-thumb.png",
+            "image": "..//brown-thumb.png",
             "name": "Rustic Vase Set",
             "price": "155",
             "type": "vertical"
         },
         {
             "id": 3,
-            "image": "../../public/white-thumb.png",
+            "image": "..//white-thumb.png",
             "name": "The Silky Vase",
             "price": "125",
             "type": "vertical"
         },
         {
             "id": 4,
-            "image": "../../public/lamp-thumb.png",
+            "image": "..//lamp-thumb.png",
             "name": "The Lucy Lamp",
             "price": "399",
             "type": "vertical"
@@ -58,21 +58,21 @@
     "popularProducts": [
         {
             "id": 1,
-            "image": "../../public/sofa-thumb.png",
+            "image": "../sofa-thumb.png",
             "name": "The Poplar suede sofa",
             "price": "980",
             "type": "horizontal"
         },
         {
             "id": 2,
-            "image": "../../public/chair-thumb.png",
+            "image": "../chair-thumb.png",
             "name": "The Dandy chair",
             "price": "250",
             "type": "vertical"
         },
         {
             "id": 3,
-            "image": "../../public/old-chair-thumb.png",
+            "image": "../old-chair-thumb.png",
             "name": "The Dandy chair",
             "price": "250",
             "type": "vertical"
@@ -82,32 +82,32 @@
         {
             "name": "linkedin icon",
             "link": "https://linkedin.com",
-            "icon": "../../public/icons/Logo--linkedin.svg"
+            "icon": "../icons/Logo--linkedin.svg"
         },
         {
             "name": "facebook icon",
             "link": "https://facebook.com",
-            "icon": "../../public/icons/Logo--facebook.svg"
+            "icon": "../icons/Logo--facebook.svg"
         },
         {
             "name": "instagram icon",
             "link": "https://instagram.com",
-            "icon": "../../public/icons/Logo--instagram.svg"
+            "icon": "../icons/Logo--instagram.svg"
         },
         {
             "name": "skype icon",
             "link": "https://skype.com",
-            "icon": "../../public/icons/Logo--skype.svg"
+            "icon": "../icons/Logo--skype.svg"
         },
         {
             "name": "twitter icon",
             "link": "https://twitter.com",
-            "icon": "../../public/icons/Logo--twitter.svg"
+            "icon": "../icons/Logo--twitter.svg"
         },
         {
             "name": "pinterest icon",
             "link": "https://pinterest.com",
-            "icon": "../../public/icons/Logo--pinterest.svg"
+            "icon": "../icons/Logo--pinterest.svg"
         }
     ]
 }
