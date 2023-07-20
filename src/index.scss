@@ -11,7 +11,7 @@
 
 html, textarea, button, input {
     font-family: 'Satoshi', sans-serif;
-    font-weight: 300;
+    // font-weight: 300;
     color: var(--dark-primary);
 }
 * {
@@ -29,7 +29,7 @@ h6,
 .bm,
 .bs {
     line-height: 150%;
-    font-weight: 300;
+    // font-weight: 300;
 }
 
 .bl {
@@ -80,6 +80,11 @@ button {
     @extend .bm;
     border: none;
     padding: 1rem 2rem;
+    background-color: transparent;
+    &:hover {
+        background-color: var(--border-grey);
+        color: var(--dark-primary)
+    }
 }
 
 .btn_trans {
@@ -122,6 +127,45 @@ nav {
     }
     div > * {
         margin-inline: 0.5rem;
+    }
+}
+
+footer {
+    background-color: var(--dark-primary);
+    color: var(--white);
+    padding-inline: 80px;
+    padding-top: 60px;
+    .top {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid var(--border-dark);
+        ul {
+            list-style: none;
+            li {
+                font-size: 16px;
+                margin-block: 0.75rem;
+            }
+            a {
+                font-size: 14px;
+            }
+        }
+        .text_input {
+            margin-block: 2rem;
+            input {
+                width: 20rem;
+            }
+        }
+    }
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+        .social_links {
+            display: flex;
+            gap: 1.5rem;
+        }
     }
 }
 
@@ -182,5 +226,40 @@ a {
     .flex_list {
         padding-block: 33px;
     }
-    
+    button {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+#sign_up_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 72px;
+    p {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    padding-block: 120px;
+}
+
+#get_in_touch_section {
+    display: flex;
+    padding: 0;
+    .left, img {
+        flex: 1 1 50%;
+    }
+    .left {
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        button {
+            margin-top: auto;
+        }
+    }
 }
