@@ -4,7 +4,8 @@ import shoppingCartIcon from '../../public/icons/Shopping--cart.svg'
 import userAvatarIcon from '../../public/icons/User--avatar.svg'
 
 import HeroTop from "./HeroTop"
-import { useState } from 'react'
+
+import useResize from '../hook/useResize'
 
 export default function Header() {
     const [width] = useResize();
@@ -24,13 +25,4 @@ export default function Header() {
             </nav>
         </>
     )
-}
-
-
-
-function useResize() {
-    const [width,setWidth] = useState();
-    window.addEventListener("resize", () => setWidth(window.innerWidth))
-
-    return [width];
 }

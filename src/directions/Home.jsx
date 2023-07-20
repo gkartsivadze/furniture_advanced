@@ -46,10 +46,3 @@ export default function Home() {
     </main>
   )
 }
-
-function useResize() {
-  const [width,setWidth] = useState();
-  window.addEventListener("resize", () => setWidth(window.innerWidth))
-
-  return [width];
-}

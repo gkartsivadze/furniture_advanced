@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 import chairImg from '../../public/chair-thumb.png'
+import useResize from '../hook/useResize';
 
 export default function Hero() {
     const [width] = useResize();
@@ -19,9 +20,3 @@ export default function Hero() {
     )
 }
 
-function useResize() {
-    const [width,setWidth] = useState();
-    window.addEventListener("resize", () => setWidth(window.innerWidth))
-
-    return [width];
-}
