@@ -101,13 +101,33 @@ button {
     color: var(--white)
 }
 
+.scroll_wrapper {
+    height: 20rem;
+    position: relative;
+    
+    display: flex;
+    align-items: flex-end;
+}
 .scrollable_list {
+    position: absolute;
+    top: 0; left: 0;
+
     display: grid;
-    grid-auto-flow: column;
+    grid-auto-flow: row;
     gap: 1rem;
+
+    height: 100vw;
+    transform-origin: right top;
+    transform: translate(-100%) rotate(-90deg);
     
     padding-right: 2rem;
-    overflow-x: auto;
+    overflow-Y: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    &>a {
+        transform: rotate(90deg);
+    }
 }
 
 ::-webkit-scrollbar {
