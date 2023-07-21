@@ -6,7 +6,7 @@ export default function ProductListSection({ name, data }) {
         <h1>{name}</h1>
         <div className="scrollable_list">
           {
-            data.map(product => <ProductCard key={product.id} type={product.type} image={product.image} name={product.name} price={product.price} />)
+            data.map(product => <ProductCard key={product.id} id={product.id} type={product.type} image={product.image} name={product.name} price={product.price} />)
           }
         </div>
         <button className="btn bm">View collection</button>

@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import App from './App.jsx'
-import Home from './directions/Home.jsx'
+import Home from './directions/Homepage/Home.jsx'
+import ProductPage from './directions/ProductPage/ProductPage.jsx'
 
 import './index.scss'
 
@@ -13,6 +14,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
+          <Route path="product_page/:productId" element={<ProductPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

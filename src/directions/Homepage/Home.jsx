@@ -1,13 +1,13 @@
-import FeaturedCard from "../components/FeaturedCard"
-import Hero from "../components/Hero"
-import TextInput from "../components/TextInput"
-import ProductListSection from "../components/ProductListSection"
+import FeaturedCard from "./FeaturedCard"
+import Hero from "../../components/Hero"
+import TextInput from "../../components/TextInput"
+import ProductListSection from "../../components/ProductListSection"
 
-import { featured, products, popularProducts } from "../data/featuredData.json"
+import { featured, products } from "../../data/featuredData.json"
 
-import backImage from "../../public/back.png"
+import backImage from "../../../public/back.png"
 
-import '../home.scss'
+import '../../home.scss'
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
         </div>
       </section>
       <ProductListSection name="New ceramics" data={products} />
-      <ProductListSection name="Our popular products" data={popularProducts} />
+      <ProductListSection name="Our popular products" data={products.filter(x => x.popular == true)} />
       <section id="sign_up_section">
         <div>
           <h1>Join the club and get the benefits</h1>
