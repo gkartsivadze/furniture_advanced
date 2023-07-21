@@ -42,7 +42,7 @@
 
 #product_section {
     padding-block: 5rem;
-    .flex_list {
+    .scrollable_list {
         padding-block: 33px;
     }
     button {
@@ -69,10 +69,13 @@
 #get_in_touch_section {
     display: flex;
     padding: 0;
-    .left, img {
-        flex: 1 1 50%;
+    img {
+        width: 50vw;
+        object-fit: cover;
+        object-position: center;
     }
     .left {
+        min-height: 20rem;
         padding: 80px;
         display: flex;
         flex-direction: column;
@@ -109,6 +112,33 @@
         .flex_list {
             flex-wrap: wrap;
             justify-content: center;
+        }
+    }
+
+    #get_in_touch_section {
+        flex-direction: column;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #get_in_touch_section {
+        .left {
+            padding: 1rem;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .custom_text_input {
+        width: 100%;
+        input {
+            flex: 1 1 auto;
+        }
+        button {
+            flex: 0 0 max-content; 
         }
     }
 }

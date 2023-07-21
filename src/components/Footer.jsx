@@ -1,4 +1,4 @@
-import TextInput from "./TextInput"
+ import TextInput from "./TextInput"
 
 import { socialNetworks } from "../data/featuredData.json"
 
