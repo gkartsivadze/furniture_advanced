@@ -152,10 +152,13 @@ button, input[type="button"] {
 
 ::-webkit-scrollbar {
     background-color: transparent;
-    height: 5px;
+    height: 10px;
 }
 ::-webkit-scrollbar-thumb {
     background-color: var(--dark-primary);
+    &:hover {
+        background-color: var(--primary);
+    }
 }
 
 .flex_list {
