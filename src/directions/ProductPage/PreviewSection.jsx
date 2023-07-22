@@ -48,7 +48,7 @@ export default function PreviewSection({ product }) {
                     </div>
                 </div>
                 <form>
-                    <div className="amount_container bl">Amount: <NumberInput handleChoose={handleChoose} value={currentAmount} /></div>
+                    <div className="amount_container bl">Quantity: <NumberInput handleChoose={handleChoose} value={currentAmount} /></div>
                     <button className="btn btn_dark">Add to card</button>
                 </form>
             </div>

@@ -70,5 +70,12 @@
             width: min(35rem, 100%);
             flex: 1 1 min(30rem, 100vh);
         }
+        .grid_container {
+            justify-content: space-between;
+        }
+        form {
+            width: 100%;
+            justify-content: space-between;
+        }
     }
 }
