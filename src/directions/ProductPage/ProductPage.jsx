@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { useParams } from "react-router-dom"
 
 import { products } from "../../data/featuredData.json"
@@ -14,10 +13,6 @@ export default function ProductPage() {
     const { productId } = useParams();
     const product = products.filter(prod => prod.id == productId)[0];
 
-    useEffect(() => {
-        document.documentElement.scrollTop = 0;
-      }, [])
-      
     return (
         <main>
             <PreviewSection product={product} />

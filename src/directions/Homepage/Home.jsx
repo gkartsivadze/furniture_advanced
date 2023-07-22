@@ -1,5 +1,3 @@
-import { useEffect } from "react"
-
 import Hero from "../../components/Hero"
 import ProductListSection from "../../components/ProductListSection"
 import FeaturedCardSection from "../../components/FeaturedCardSection"
@@ -12,10 +10,6 @@ import backImage from "../../../public/back.png"
 import '../../home.scss'
 
 export default function Home() {
-
-  useEffect(() => {
-    document.documentElement.scrollTop = 0;
-  }, [])
 
   return (
     <main>
