@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     gap: 4rem;
-    height: max(40rem, calc(100vh - 8rem));
+    height: max(40rem, 100vh);
 
     padding-inline: 0;
 
@@ -49,6 +49,26 @@
                 align-items: center;
                 gap: 1.4rem;
             }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    #product_preview_section {
+        gap: 1rem;
+        .info {
+            padding-inline: 1rem;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #product_preview_section {
+        flex-direction: column;
+        height: auto;
+        img {
+            width: min(35rem, 100%);
+            flex: 1 1 min(30rem, 100vh);
         }
     }
 }
