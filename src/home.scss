@@ -32,13 +32,6 @@
     }
 }
 
-#difference_section {
-    padding-block: 3.75rem;
-    h3 {
-        text-align: center;
-    }
-}
-
 .product_section {
     padding-block: 5rem;
     .scrollable_list {
@@ -104,13 +97,6 @@
             justify-content: start;
 
             padding-inline: 2rem;
-        }
-    }
-
-    #difference_section {
-        .flex_list {
-            flex-wrap: wrap;
-            justify-content: center;
         }
     }
 

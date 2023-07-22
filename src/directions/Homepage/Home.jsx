@@ -1,9 +1,9 @@
-import FeaturedCard from "./FeaturedCard"
 import Hero from "../../components/Hero"
-import TextInput from "../../components/TextInput"
 import ProductListSection from "../../components/ProductListSection"
+import FeaturedCardSection from "../../components/FeaturedCardSection"
+import SignUpSection from "../../components/SignUpSection"
 
-import { featured, products } from "../../data/featuredData.json"
+import {  products } from "../../data/featuredData.json"
 
 import backImage from "../../../public/back.png"
 
@@ -15,25 +15,10 @@ export default function Home() {
       <section id="welcome_section">
         <Hero />
       </section>
-      <section id="difference_section">
-        <h3>What makes our brand different</h3>
-        <div className="flex_list">
-          {
-            featured.map(elem => <FeaturedCard key={elem.id} icon={elem.icon} header={elem.header} body={elem.body} />)
-          }
-        </div>
-      </section>
+      <FeaturedCardSection />
       <ProductListSection name="New ceramics" data={products} />
       <ProductListSection name="Our popular products" data={products.filter(x => x.popular == true)} />
-      <section id="sign_up_section">
-        <div>
-          <h1>Join the club and get the benefits</h1>
-          <p className="bm">
-            Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more
-          </p>
-        </div>
-        <TextInput placeHolder="your@email.com" />
-      </section>
+      <SignUpSection />
       <section id="get_in_touch_section">
           <div className="left">
             <h1>From a studio in London to a global brand with over 400 outlets</h1>

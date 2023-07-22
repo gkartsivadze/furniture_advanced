@@ -6,6 +6,7 @@ import userAvatarIcon from '../../public/icons/User--avatar.svg'
 import HeroTop from "./HeroTop"
 
 import useResize from '../hook/useResize'
+import { Link } from 'react-router-dom'
 
 export default function Header() {
     const [width] = useResize();
@@ -14,7 +15,7 @@ export default function Header() {
             <nav>
                 <div className='top'>
                     {width > 700 && <img id='search-btn' src={searchIcon} alt="Search" />}
-                    <img id='logo' src={logo} alt="" />
+                    <Link to="/"><img id='logo' src={logo} alt="" /></Link>
                     <div>
                         {width <= 700 && <img id='search-btn' src={searchIcon} alt="Search" />}
                         <img src={shoppingCartIcon} alt="" />
