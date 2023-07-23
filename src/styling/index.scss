@@ -64,9 +64,9 @@ button, input[type="button"] {
     cursor: pointer;
 }
 
-.product_card.portrait {
+.product_card {
     img {
-        margin-bottom: 1.5rem;
+        height: 20rem;
     }
 }
 
@@ -264,6 +264,7 @@ section {
     box-sizing: border-box;
     
     &:nth-of-type(1) {
+        height: clamp(50rem, 100vh, 60rem);
         padding-top: 8rem;
     }
 }
@@ -287,6 +288,10 @@ a {
         font-size: clamp(12px, 2vw, 18px);
     }
     section {
+        padding-inline: 1rem;
+    }
+    .featured_card {
+        width: auto;
         padding-inline: 1rem;
     }
 }

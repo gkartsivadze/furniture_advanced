@@ -7,7 +7,7 @@ import ProductListSection from '../../components/ProductListSection';
 import FeaturedCardSection from "../../components/FeaturedCardSection";
 import SignUpSection from "../../components/SignUpSection";
 
-import "../../product.scss"
+import "../../styling/product.scss"
 
 export default function ProductPage() {
     const { productId } = useParams();

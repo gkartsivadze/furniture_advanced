@@ -1,6 +1,7 @@
  import TextInput from "./TextInput"
 
 import { socialNetworks } from "../data/featuredData.json"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
     return (
@@ -25,7 +26,7 @@ export default function Footer() {
                 </ul>
                 <ul>
                     <li>Our company</li>
-                    <li><a href="#">About us</a></li>
+                    <li><Link to="about">About us</Link></li>
                     <li><a href="#">Vacancies</a></li>
                     <li><a href="#">Contact us</a></li>
                     <li><a href="#">Privacy</a></li>

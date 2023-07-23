@@ -5,8 +5,9 @@ import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 import App from './App.jsx'
 import Home from './directions/Homepage/Home.jsx'
 import ProductPage from './directions/ProductPage/ProductPage.jsx'
+import AboutPage from './directions/AboutPage/AboutPage.jsx'
 
-import './index.scss'
+import './styling/index.scss'
 
 const ScrollToTopOnRouteChange = () => {
   const location = useLocation();
@@ -26,6 +27,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
           <Route path="product_page/:productId" element={<ProductPage />} />
+          <Route path="product_page/:productId" element={<ProductPage />} />
+          <Route path="about" element={<AboutPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -1,7 +1,3 @@
-#welcome_section {
-    height: max(40rem, 100vh);
-}
-
 .hero_top {
     display: flex;
     justify-content: center;
@@ -17,7 +13,7 @@
     color: var(--white);
     img {
         object-fit: cover;
-        height: max(40rem, 80vh);
+        height: clamp(40rem, 80vh, 50rem);
     }
     .left {
         display: flex;
