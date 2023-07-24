@@ -1,8 +1,10 @@
 import CartItem from "./CartItem"
 
 import { products } from "../../data/featuredData.json"
+import { useState } from "react"
 
 export default function CartSection() {
+    const [cart, setcart] = useState(JSON.parse(localStorage.getItem("cart")) || [])
     return (
         <section id="cart_section">
             <table>
@@ -14,9 +16,7 @@ export default function CartSection() {
                     </tr>
                 </thead>
                 <tbody>
-                    <CartItem  data={products[0]} />
-                    <CartItem  data={products[1]} />
-                    <CartItem  data={products[2]} />
+                    {cart.map(prod => <CartItem  data={products[prod-1]} />)}
                 </tbody>
             </table>
         </section>

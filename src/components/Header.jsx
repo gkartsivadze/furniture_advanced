@@ -18,7 +18,7 @@ export default function Header() {
                     <Link to="/"><img id='logo' src={logo} alt="" /></Link>
                     <div>
                         {width <= 700 && <img id='search-btn' src={searchIcon} alt="Search" />}
-                        <img src={shoppingCartIcon} alt="" />
+                        <Link to="cart" className='btn btn_trans'><img src={shoppingCartIcon} alt="" /></Link>
                         <img src={userAvatarIcon} alt="" />
                     </div>
                 </div>

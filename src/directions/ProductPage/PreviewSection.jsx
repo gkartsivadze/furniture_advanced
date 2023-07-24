@@ -2,9 +2,9 @@ import { useState } from "react";
 import NumberInput from "../../components/NumberInput";
 
 export default function PreviewSection({ product }) {
-
     const [currentAmount, setCurrentAmount] = useState(1)
-
+    const [cartItems, setCartItems] = useState(JSON.parse(localStorage?.getItem("cart")) || [])
+    console.log(cartItems);
     function handleChoose(opp) {
         switch (opp) {
             case "+":
@@ -16,6 +16,11 @@ export default function PreviewSection({ product }) {
             default:
                 alert("Something went wrong")
         }
+    }
+
+    function addToCart(e) {
+        e.preventDefault();
+        localStorage.setItem("cart", JSON.stringify([...cartItems.filter(x => x!=product.id), product.id]));
     }
 
     return (
@@ -49,7 +54,7 @@ export default function PreviewSection({ product }) {
                 </div>
                 <form>
                     <div className="amount_container bl">Quantity: <NumberInput handleChoose={handleChoose} value={currentAmount} /></div>
-                    <button className="btn btn_dark">Add to card</button>
+                    <button onClick={addToCart} className="btn btn_dark">Add to card</button>
                 </form>
             </div>
         </section>
