@@ -1,8 +1,8 @@
-import FeaturedCardSection from '../../components/FeaturedCardSection';
-import GetInTouch from '../../components/GetInTouch';
-import SignUpSection from '../../components/SignUpSection';
+import FeaturedCardSection from '../components/FeaturedCardSection';
+import GetInTouch from '../components/GetInTouch';
+import SignUpSection from '../components/SignUpSection';
 
-import '../../styling/about.scss'
+import '../styling/about.scss'
 
 export default function AboutPage() {
     return (

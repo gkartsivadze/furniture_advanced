@@ -1,13 +1,13 @@
 import { useParams } from "react-router-dom"
 
-import { products } from "../../data/featuredData.json"
+import { products } from "../data/featuredData.json"
 
-import PreviewSection from "./PreviewSection"
-import ProductListSection from '../../components/ProductListSection';
-import FeaturedCardSection from "../../components/FeaturedCardSection";
-import SignUpSection from "../../components/SignUpSection";
+import PreviewSection from "../components/PreviewSection"
+import ProductListSection from '../components/ProductListSection';
+import FeaturedCardSection from "../components/FeaturedCardSection";
+import SignUpSection from "../components/SignUpSection";
 
-import "../../styling/product.scss"
+import "../styling/product.scss"
 
 export default function ProductPage() {
     const { productId } = useParams();

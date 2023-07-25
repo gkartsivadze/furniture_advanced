@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 
 import App from './App.jsx'
-import Home from './directions/Homepage/Home.jsx'
-import ProductPage from './directions/ProductPage/ProductPage.jsx'
-import AboutPage from './directions/AboutPage/AboutPage.jsx'
-import CartPage from './directions/CartPage/CartPage.jsx'
+import Home from './directions/Home.jsx'
+import ProductPage from './directions/ProductPage.jsx'
+import AboutPage from './directions/AboutPage.jsx'
+import CartPage from './directions/CartPage.jsx'
 
 import './styling/index.scss'
 
