@@ -8,8 +8,17 @@
 
 .collection {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 20rem);
+    grid-template-columns: repeat(auto-fill, 16rem);
     gap: 1.25rem;
     justify-content: space-evenly ;
     padding-block: 2rem;
+}
+
+@media (max-width: 1000px) {
+    .collection {
+        grid-template-columns: repeat(auto-fill, 12rem);
+    }
+    .product_card img {
+            height: 15rem !important;
+    }
 }

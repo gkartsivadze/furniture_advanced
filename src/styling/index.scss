@@ -294,10 +294,6 @@ a {
     section {
         padding-inline: 1rem;
     }
-    .featured_card {
-        width: auto;
-        padding-inline: 1rem;
-    }
 }
 
 @media (max-width: 700px) {
@@ -308,5 +304,12 @@ a {
                 display: none;
             }
         }
+    }
+}
+
+@media (max-width: 580px) {
+    .featured_card {
+        width: auto;
+        padding-inline: 1rem;
     }
 }
