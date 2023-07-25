@@ -1,0 +1,15 @@
+#collection_section {
+    height: auto;
+    h1 {
+        text-align: center;
+        padding-block: 4rem 2rem;
+    }
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 20rem);
+    gap: 1.25rem;
+    justify-content: space-evenly ;
+    padding-block: 2rem;
+}

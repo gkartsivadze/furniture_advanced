@@ -7,6 +7,7 @@ import Home from './directions/Home.jsx'
 import ProductPage from './directions/ProductPage.jsx'
 import AboutPage from './directions/AboutPage.jsx'
 import CartPage from './directions/CartPage.jsx'
+import CollectionPage from './directions/CollectionPage.jsx'
 
 import './styling/index.scss'
 
@@ -30,6 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="product_page/:productId" element={<ProductPage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="cart" element={<CartPage />} />
+          <Route path="collection" element={<CollectionPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
