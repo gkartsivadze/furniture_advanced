@@ -8,9 +8,7 @@ import { products } from "../data/featuredData.json"
 import "../styling/cart.scss"
 
 export default function CartPage() {
-    const [cart, setcart] = useState(JSON.parse(localStorage.getItem("cart")) || []);
-    const cartItems = products.filter(x => cart.some(elem => elem == x.id));
-    console.log(cart);
+    const [cart, setcart] = useState(JSON.parse(localStorage.getItem("cart")).map(items => ({data: products[items.id - 1], amount: items.amount})) || []);
     return (
         <main>
             <section id="cart_section">
@@ -24,10 +22,10 @@ export default function CartPage() {
                         </tr>
                     </thead>
                     <tbody>
-                        {cart.map(prod => <CartItem key={prod} data={products[prod - 1]} />)}
+                        {cart.map((prod, ind) => <CartItem key={ind} data={prod.data} amount={prod.amount} />)}
                     </tbody>
                 </table>
-                <Checkout sum={cartItems.reduce((acc, item) => acc + parseInt(item.price), 0)} />
+                <Checkout sum={cart.reduce((acc, item) => acc + parseInt(item.data.price) * item.amount, 0)} />
             </section>
         </main>
     )

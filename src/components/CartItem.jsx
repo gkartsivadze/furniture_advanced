@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function CartItem({ data }) {
-    console.log(data);
+export default function CartItem({ data, amount }) {
     return (
         <tr>
             <td>
@@ -10,8 +9,8 @@ export default function CartItem({ data }) {
                 <p className="bs">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <p className="bl">£{data.price}</p>
             </td>
-            <td>1</td>
-            <td>£{data.price}</td>
+            <td>{ amount }</td>
+            <td>£{data.price * amount}</td>
         </tr>
     )
 };

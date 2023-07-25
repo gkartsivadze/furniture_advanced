@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import NumberInput from "./NumberInput";
 
 export default function PreviewSection({ product }) {
     const [currentAmount, setCurrentAmount] = useState(1)
-    const [cartItems, setCartItems] = useState(JSON.parse(localStorage?.getItem("cart")) || [])
+    const [cartItems, setCartItems] = useState([])
+
+    useEffect(() => {
+        localStorage.setItem("cart", JSON.stringify(cartItems));
+        console.log(cartItems);
+    }, [cartItems])
     
     function handleChoose(opp) {
         switch (opp) {
@@ -20,7 +25,13 @@ export default function PreviewSection({ product }) {
 
     function addToCart(e) {
         e.preventDefault();
-        localStorage.setItem("cart", JSON.stringify([...cartItems, product.id]));
+        setCartItems(prev => ([
+            ...prev.filter(cur => cur.id != product.id),
+            {
+                id: product.id,
+                amount: currentAmount
+            }
+        ]));
     }
 
     return (
