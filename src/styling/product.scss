@@ -52,6 +52,27 @@
     }
 }
 
+.add_to_cart_message {
+    position: fixed;
+    bottom: 0;
+    left: 0; right: 0;
+    text-align: center;
+    
+    padding: 1rem;
+    font-size: 1.75rem;
+    
+    background: var(--dark-primary);
+    color: var(--white);
+    visibility: hidden;
+    opacity: 0;
+
+    transition: opacity 0.3s;
+    &.show {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
 @media (max-width: 1200px) {
     #product_preview_section {
         gap: 1rem;

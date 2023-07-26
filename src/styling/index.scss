@@ -315,3 +315,9 @@ a {
         padding-inline: 1rem;
     }
 }
+
+@media (max-width: 350px) {
+    :root {
+        font-size: clamp(8px, 3vw, 12px);
+    }
+}

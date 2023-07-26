@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import NumberInput from "./NumberInput";
 
 export default function PreviewSection({ product }) {
     const [currentAmount, setCurrentAmount] = useState(1)
     const [cartItems, setCartItems] = useState([])
+    const messageRef = useRef();
 
     useEffect(() => {
         localStorage.setItem("cart", JSON.stringify(cartItems));
@@ -31,6 +32,8 @@ export default function PreviewSection({ product }) {
                 amount: currentAmount
             }
         ]));
+        messageRef.current.classList.add("show");
+        setTimeout(() => messageRef.current.classList.remove("show"), 1500)
     }
 
     return (
@@ -66,6 +69,7 @@ export default function PreviewSection({ product }) {
                     <div className="amount_container bl">Quantity: <NumberInput handleChoose={handleChoose} value={currentAmount} /></div>
                     <button onClick={addToCart} className="btn btn_dark">Add to card</button>
                 </form>
+                <div ref={messageRef} className="add_to_cart_message">Your item added to cart</div>
             </div>
         </section>
     )
