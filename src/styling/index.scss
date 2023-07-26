@@ -69,6 +69,10 @@ button, input[type="button"] {
 }
 
 .product_card {
+    padding: 0.5rem;
+    &:hover {
+        background-color: var(--border-grey);
+    }
     img {
         width: 15rem;
         height: 20rem;
