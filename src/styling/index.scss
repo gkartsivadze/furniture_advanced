@@ -70,7 +70,9 @@ button, input[type="button"] {
 
 .product_card {
     img {
+        width: 12rem;
         height: 20rem;
+        object-fit: cover !important;
     }
 }
 

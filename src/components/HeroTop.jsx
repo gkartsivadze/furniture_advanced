@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom";
+
 export default function HeroTop() {
     return (
         <ul className="hero_top">
-            <li><a href="#">Plant pots</a></li>
-            <li><a href="#">Ceramics</a></li>
-            <li><a href="#">Tables</a></li>
-            <li><a href="#">Chairs</a></li>
-            <li><a href="#">Crockery</a></li>
-            <li><a href="#">Tableware</a></li>
-            <li><a href="#">Cutlery</a></li>
+            <li><Link to={`/list/plant_pots`}>Plant pots</Link></li>
+            <li><Link to={`/list/ceramic`}>Ceramics</Link></li>
+            <li><Link to={`/list/tables`}>Tables</Link></li>
+            <li><Link to={`/list/chairs`}>Chairs</Link></li>
+            <li><Link to={`/list/crockery`}>Crockery</Link></li>
+            <li><Link to={`/list/tableware`}>Tableware</Link></li>
+            <li><Link to={`/list/cutlery`}>Cutlery</Link></li>
         </ul>
     )
 }

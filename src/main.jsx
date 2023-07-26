@@ -10,6 +10,7 @@ import CartPage from './directions/CartPage.jsx'
 import CollectionPage from './directions/CollectionPage.jsx'
 
 import './styling/index.scss'
+import Lists from './directions/Lists.jsx'
 
 const ScrollToTopOnRouteChange = () => {
   const location = useLocation();
@@ -32,6 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
           <Route path="about" element={<AboutPage />} />
           <Route path="cart" element={<CartPage />} />
           <Route path="collection" element={<CollectionPage />} />
+          <Route path="list/:filterOptions" element={<Lists />} />
         </Route>
       </Routes>
     </BrowserRouter>

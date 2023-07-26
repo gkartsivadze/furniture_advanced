@@ -10,7 +10,6 @@ import "../styling/collection.scss"
 import { useEffect, useState } from "react"
 
 export default function CollectionPage() {
-    const widerCollection = [...products, ...products, ...products].filter(x => x.type == "vertical");
     const [filteredCollection, setFilteredCollection] = useState([]);
     const [filter, setFilter] = useState({
         category: "any",
@@ -20,7 +19,7 @@ export default function CollectionPage() {
 
     useEffect(() => {
         let priceRange = filter.price.split("_");
-        setFilteredCollection([...widerCollection]
+        setFilteredCollection(products
             .filter(x => (filter.category == "any" || x.category == filter.category) &&
                 (filter.brand == "any" || x.brand == filter.brand) &&
                 (filter.price == "any" || (x.price > priceRange[0] && x.price < priceRange[1]))

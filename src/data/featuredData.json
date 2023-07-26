@@ -33,7 +33,7 @@
             "price": "250",
             "type": "vertical",
             "popular": true,
-            "category": "a_category",
+            "category": "chairs",
             "brand": "b_brand"
         },
         {
@@ -43,7 +43,7 @@
             "price": "155",
             "type": "vertical",
             "popular": false,
-            "category": "b_category",
+            "category": "ceramic",
             "brand": "a_brand"
         },
         {
@@ -53,7 +53,7 @@
             "price": "125",
             "type": "vertical",
             "popular": false,
-            "category": "b_category",
+            "category": "plant_pots",
             "brand": "b_brand"
         },
         {
@@ -73,7 +73,7 @@
             "price": "250",
             "type": "vertical",
             "popular": true,
-            "category": "a_category",
+            "category": "chairs",
             "brand": "a_brand"
         },
         {
@@ -83,7 +83,47 @@
             "price": "980",
             "type": "horizontal",
             "popular": true,
-            "category": "a_category",
+            "category": "chairs",
+            "brand": "a_brand"
+        },
+        {
+            "id": 7,
+            "image": "../cutlery.webp",
+            "name": "Cutlery",
+            "price": "80",
+            "type": "vertical",
+            "popular": true,
+            "category": "cutlery",
+            "brand": "a_brand"
+        },
+        {
+            "id": 8,
+            "image": "../crockery.webp",
+            "name": "Crockery",
+            "price": "50",
+            "type": "vertical",
+            "popular": false,
+            "category": "crockery",
+            "brand": "a_brand"
+        },
+        {
+            "id": 9,
+            "image": "../table.webp",
+            "name": "Table",
+            "price": "450",
+            "type": "vertical",
+            "popular": false,
+            "category": "tables",
+            "brand": "a_brand"
+        },
+        {
+            "id": 10,
+            "image": "../tableware.webp",
+            "name": "Tableware",
+            "price": "150",
+            "type": "vertical",
+            "popular": true,
+            "category": "tableware",
             "brand": "a_brand"
         }
     ],
