@@ -69,7 +69,7 @@ export default function PreviewSection({ product }) {
                     <div className="amount_container bl">Quantity: <NumberInput handleChoose={handleChoose} value={currentAmount} /></div>
                     <button onClick={addToCart} className="btn btn_dark">Add to card</button>
                 </form>
-                <div ref={messageRef} className="add_to_cart_message">Your item added to cart</div>
+                <div ref={messageRef} className="add_to_cart_message">Item added to cart</div>
             </div>
         </section>
     )
