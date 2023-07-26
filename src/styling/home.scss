@@ -86,20 +86,6 @@
         height: auto;
         padding-top: 12rem;
     }
-    nav {
-        div > * {
-            margin-inline: 0;
-        }
-        .hero_top {
-            display: grid;
-            grid-auto-flow: column;
-            grid-auto-columns: max-content;
-            overflow-x: auto;
-            justify-content: start;
-
-            padding-inline: 2rem;
-        }
-    }
 
     #get_in_touch_section {
         flex-direction: column;
