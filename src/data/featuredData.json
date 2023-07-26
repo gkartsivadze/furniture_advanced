@@ -32,7 +32,9 @@
             "name": "The Dandy chair",
             "price": "250",
             "type": "vertical",
-            "popular": true
+            "popular": true,
+            "category": "a_category",
+            "brand": "b_brand"
         },
         {
             "id": 2,
@@ -40,7 +42,9 @@
             "name": "Rustic Vase Set",
             "price": "155",
             "type": "vertical",
-            "popular": false
+            "popular": false,
+            "category": "b_category",
+            "brand": "a_brand"
         },
         {
             "id": 3,
@@ -48,7 +52,9 @@
             "name": "The Silky Vase",
             "price": "125",
             "type": "vertical",
-            "popular": false
+            "popular": false,
+            "category": "b_category",
+            "brand": "b_brand"
         },
         {
             "id": 4,
@@ -56,7 +62,9 @@
             "name": "The Lucy Lamp",
             "price": "399",
             "type": "vertical",
-            "popular": false
+            "popular": false,
+            "category": "b_category",
+            "brand": "a_brand"
         },
         {
             "id": 5,
@@ -64,7 +72,9 @@
             "name": "The Dandy chair",
             "price": "250",
             "type": "vertical",
-            "popular": true
+            "popular": true,
+            "category": "a_category",
+            "brand": "a_brand"
         },
         {
             "id": 6,
@@ -72,7 +82,9 @@
             "name": "The Poplar suede sofa",
             "price": "980",
             "type": "horizontal",
-            "popular": true
+            "popular": true,
+            "category": "a_category",
+            "brand": "a_brand"
         }
     ],
     "socialNetworks": [
