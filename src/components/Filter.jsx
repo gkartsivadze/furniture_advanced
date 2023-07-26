@@ -13,7 +13,8 @@ export default function Filter({ passFilter }) {
                 <option value="any">Price</option>
                 <option value="0_150">0-150</option>
                 <option value="150_300">150-300</option>
-                <option value="300_800">300-800</option>
+                <option value="300_600">300-600</option>
+                <option value="600_1000">600-1000</option>
             </select>
             <select onChange={passFilter} name="brand" id="brand">
                 <option value="any">Brand</option>

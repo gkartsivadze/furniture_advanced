@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import chairImg from '../../public/chair-thumb.png'
+import chairImg from '../../public/chair-thumb.webp'
 import useResize from '../hook/useResize';
 import { Link } from 'react-router-dom';
 

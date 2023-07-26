@@ -44,7 +44,6 @@ export default function CollectionPage() {
                             filteredCollection.map(elem => <ProductCard
                                 key={nanoid()}
                                 id={elem.id}
-                                type={elem.type}
                                 image={elem.image}
                                 name={elem.name}
                                 price={elem.price}

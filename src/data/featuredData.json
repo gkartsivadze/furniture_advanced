@@ -28,60 +28,54 @@
     "products": [
         {
             "id": 1,
-            "image": "../chair-thumb.png",
+            "image": "../chair-thumb.webp",
             "name": "The Dandy chair",
-            "price": "250",
-            "type": "vertical",
+            "price": 250,
             "popular": true,
             "category": "chairs",
             "brand": "b_brand"
         },
         {
             "id": 2,
-            "image": "../brown-thumb.png",
+            "image": "../brown-thumb.webp",
             "name": "Rustic Vase Set",
-            "price": "155",
-            "type": "vertical",
+            "price": 155,
             "popular": false,
             "category": "ceramic",
             "brand": "a_brand"
         },
         {
             "id": 3,
-            "image": "../white-thumb.png",
+            "image": "../white-thumb.webp",
             "name": "The Silky Vase",
-            "price": "125",
-            "type": "vertical",
+            "price": 125,
             "popular": false,
             "category": "plant_pots",
             "brand": "b_brand"
         },
         {
             "id": 4,
-            "image": "../lamp-thumb.png",
+            "image": "../lamp-thumb.webp",
             "name": "The Lucy Lamp",
-            "price": "399",
-            "type": "vertical",
+            "price": 399,
             "popular": false,
             "category": "b_category",
             "brand": "a_brand"
         },
         {
             "id": 5,
-            "image": "../old-chair-thumb.png",
+            "image": "../old-chair-thumb.webp",
             "name": "The Dandy chair",
-            "price": "250",
-            "type": "vertical",
+            "price": 250,
             "popular": true,
             "category": "chairs",
             "brand": "a_brand"
         },
         {
             "id": 6,
-            "image": "../sofa-thumb.png",
+            "image": "../sofa-thumb.webp",
             "name": "The Poplar suede sofa",
-            "price": "980",
-            "type": "horizontal",
+            "price": 980,
             "popular": true,
             "category": "chairs",
             "brand": "a_brand"
@@ -90,8 +84,7 @@
             "id": 7,
             "image": "../cutlery.webp",
             "name": "Cutlery",
-            "price": "80",
-            "type": "vertical",
+            "price": 80,
             "popular": true,
             "category": "cutlery",
             "brand": "a_brand"
@@ -100,8 +93,7 @@
             "id": 8,
             "image": "../crockery.webp",
             "name": "Crockery",
-            "price": "50",
-            "type": "vertical",
+            "price": 50,
             "popular": false,
             "category": "crockery",
             "brand": "a_brand"
@@ -110,8 +102,7 @@
             "id": 9,
             "image": "../table.webp",
             "name": "Table",
-            "price": "450",
-            "type": "vertical",
+            "price": 450,
             "popular": false,
             "category": "tables",
             "brand": "a_brand"
@@ -120,8 +111,7 @@
             "id": 10,
             "image": "../tableware.webp",
             "name": "Tableware",
-            "price": "150",
-            "type": "vertical",
+            "price": 150,
             "popular": true,
             "category": "tableware",
             "brand": "a_brand"

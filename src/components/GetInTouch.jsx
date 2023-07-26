@@ -1,4 +1,4 @@
-import backImage from "../../public/back.png"
+import backImage from "../../public/back.webp"
 
 export default function GetInTouch() {
     return (

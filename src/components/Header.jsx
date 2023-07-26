@@ -14,11 +14,11 @@ export default function Header() {
         <>
             <nav>
                 <div className='top'>
-                    {width > 700 && <img id='search-btn' src={searchIcon} alt="Search" />}
+                    {width > 700 && <Link to={"/collection"}><img id='search-btn' src={searchIcon} alt="Search" /></Link>}
                     <Link to="/"><img id='logo' src={logo} alt="" /></Link>
                     <div>
-                        {width <= 700 && <img id='search-btn' src={searchIcon} alt="Search" />}
-                        <Link to="cart" className='btn btn_trans'><img src={shoppingCartIcon} alt="" /></Link>
+                        {width <= 700 && <Link to={"/collection"}><img id='search-btn' src={searchIcon} alt="Search" /></Link>}
+                        <Link to="/cart"><img src={shoppingCartIcon} alt="" /></Link>
                         <img src={userAvatarIcon} alt="" />
                     </div>
                 </div>
