@@ -21,7 +21,7 @@
             }
             td {
                 padding-block: 0.625rem;
-                &:nth-of-type(1) {
+                &:nth-of-type(1) a {
                     display: grid;
                     grid-template-rows: repeat(3, 1fr);
                     grid-template-columns: auto 1fr;

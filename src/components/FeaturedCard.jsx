@@ -1,7 +1,7 @@
 export default function FeaturedCard({icon, header, body}) {
     return (
     <div className="featured_card">
-        <img src={icon} alt="" />
+        <img src={icon} alt={header} />
         <h4>{header}</h4>
         <p className="bm">{body}</p>
     </div>

@@ -6,6 +6,18 @@
     }
 }
 
+#filter {
+    select {
+        padding: 0.5rem 1rem;
+        border: none;
+        margin-right: 0.5rem;
+        option {
+            background-color: transparent;
+        }
+    }
+    
+}
+
 .collection {
     display: grid;
     grid-template-columns: repeat(auto-fill, 16rem);

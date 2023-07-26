@@ -7,7 +7,6 @@ export default function PreviewSection({ product }) {
 
     useEffect(() => {
         localStorage.setItem("cart", JSON.stringify(cartItems));
-        console.log(cartItems);
     }, [cartItems])
     
     function handleChoose(opp) {

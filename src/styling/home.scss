@@ -32,9 +32,11 @@
     padding-block: 5rem;
     .scrollable_list {
         padding-block: 33px;
+        margin-bottom: 2rem;
     }
-    button {
+    .btn {
         display: block;
+        width: fit-content;
         margin: 0 auto;
     }
 }
