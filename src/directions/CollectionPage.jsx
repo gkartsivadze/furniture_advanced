@@ -10,14 +10,21 @@ import "../styling/collection.scss"
 import { useEffect, useState } from "react"
 
 export default function CollectionPage() {
-    const widerCollection = [...products, ...products, ...products].filter(x => x.type == "vertical")
+    const widerCollection = [...products, ...products, ...products].filter(x => x.type == "vertical");
+    const [filteredCollection, setFilteredCollection] = useState([]);
     const [filter, setFilter] = useState({
         category: "any",
         price: "any",
         brand: "any"
     })
+
     useEffect(() => {
-        console.log(filter)
+        let priceRange = filter.price.split("_");
+        setFilteredCollection([...widerCollection]
+            .filter(x => (filter.category == "any" || x.category == filter.category) &&
+                (filter.brand == "any" || x.brand == filter.brand) &&
+                (filter.price == "any" || (x.price > priceRange[0] && x.price < priceRange[1]))
+            ));
     }, [filter])
 
     function handleFiltering(e) {
@@ -29,24 +36,24 @@ export default function CollectionPage() {
 
     return (
         <main>
-        <section id="collection_section">
-            <h1>View all products</h1>
-            <Filter passFilter={handleFiltering} />
-            <div className="collection">
-                {
-                widerCollection
-                        .map(elem=> <ProductCard
-                                        key={nanoid()}
-                                        id={elem.id}
-                                        type={elem.type}
-                                        image={elem.image}
-                                        name={elem.name}
-                                        price={elem.price}
-                                    />)
-                }
-            </div>
-        </section>
-        <GetInTouch />
+            <section id="collection_section">
+                <h1>View all products</h1>
+                <Filter passFilter={handleFiltering} />
+                <div className="collection">
+                    {
+                        filteredCollection.length > 0 ?
+                            filteredCollection.map(elem => <ProductCard
+                                key={nanoid()}
+                                id={elem.id}
+                                type={elem.type}
+                                image={elem.image}
+                                name={elem.name}
+                                price={elem.price}
+                            />) : <p className="bl">Nothing To Display</p>
+                    }
+                </div>
+            </section>
+            <GetInTouch />
         </main>
     )
 };
