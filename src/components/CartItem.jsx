@@ -4,7 +4,7 @@ export default function CartItem({ handleRemoveFromCart, data, amount }) {
     return (
         <tr>
             <td>
-                <Link to={`/product_page/${data.id}`}>
+                <Link to={`/product_page/${data.id}`} style={{textAlign: "left"}}>
                     <img src={data.image} alt="" />
                     <h3>{data.name}</h3>
                     <p className="bs">Lorem ipsum dolor sit amet, consectetur.</p>

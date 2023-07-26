@@ -13,11 +13,10 @@ export default function CartPage() {
     function handleRemoveFromCart(itemId) {
         setCart(cart.filter(x => x.data.id != itemId))
     }
-    
     useEffect(() => {
-        localStorage.setItem("cart", JSON.stringify(cart))
+        localStorage.setItem("cart", JSON.stringify(cart.map(item => ({id: item.data.id, amount: item.amount}))))
     }, [cart])
-
+    console.log(cart);
     return (
         <main>
             <section id="cart_section">
@@ -25,7 +24,7 @@ export default function CartPage() {
                 <table>
                     <thead>
                         <tr>
-                            <th>Product</th>
+                            <th style={{textAlign: "left"}}>Product</th>
                             <th>Quantity</th>
                             <th>Total</th>
                             <th>Remove</th>

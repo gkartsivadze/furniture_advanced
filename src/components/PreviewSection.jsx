@@ -3,7 +3,7 @@ import NumberInput from "./NumberInput";
 
 export default function PreviewSection({ product }) {
     const [currentAmount, setCurrentAmount] = useState(1)
-    const [cartItems, setCartItems] = useState([])
+    const [cartItems, setCartItems] = useState(JSON.parse(localStorage?.getItem("cart")) || [])
     const messageRef = useRef();
 
     useEffect(() => {
