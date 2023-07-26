@@ -10,7 +10,7 @@ export default function Lists() {
     const { filterOptions } = useParams();
     return (
         <section id="lists_section">
-            <h1>{filterOptions.toUpperCase()}</h1>
+            <h1>{filterOptions.toUpperCase().replace(/_/g, " ")}</h1>
             <div className="collection">
                 {
                     products.filter(x => x.category == filterOptions).map(elem => <ProductCard

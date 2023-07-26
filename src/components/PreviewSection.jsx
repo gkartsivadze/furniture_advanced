@@ -22,16 +22,19 @@ export default function PreviewSection({ product }) {
                 alert("Something went wrong")
         }
     }
-
+    
     function addToCart(e) {
         e.preventDefault();
+        let oldAmount = cartItems.filter(x => x.id == product.id)[0]?.amount || 0;
+        let sumAmount = currentAmount + oldAmount;
         setCartItems(prev => ([
             ...prev.filter(cur => cur.id != product.id),
             {
                 id: product.id,
-                amount: currentAmount
+                amount: sumAmount > 100 ? 100 : sumAmount
             }
         ]));
+        setCurrentAmount(1);
         messageRef.current.classList.add("show");
         setTimeout(() => messageRef.current.classList.remove("show"), 1500)
     }
